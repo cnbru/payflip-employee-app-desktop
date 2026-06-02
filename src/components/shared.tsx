@@ -1,4 +1,5 @@
 import { TrendingUp, Heart, X } from 'lucide-react'
+import logoSrc from '../assets/logo.svg'
 
 export const CARD_HOVER = 'cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)] hover:border-[#d0d0d3]'
 
@@ -33,7 +34,7 @@ export function NavBar({ links, onNavigate }: {
   const targets: Record<string, string> = { Home: 'home', Benefits: 'benefits-catalog', Budget: 'budgets' }
   return (
     <header className="border-b border-[#eaeaeb] flex h-[60px] items-center justify-between px-8 w-full shrink-0">
-      <img src="/src/assets/logo.svg" alt="Payflip" className="h-7" />
+      <img src={logoSrc} alt="Payflip" className="h-7" />
       <nav className="absolute left-1/2 -translate-x-1/2 flex gap-6 h-[60px] items-center">
         {links.map((link) => (
           <a

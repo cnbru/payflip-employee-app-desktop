@@ -1,4 +1,5 @@
 import { ChevronRight, Lock, Car, Gift, UtensilsCrossed, Activity } from 'lucide-react'
+import logoSrc from '../assets/logo.svg'
 import { stagger } from '../lib/animate'
 
 interface Props {
@@ -101,7 +102,7 @@ export default function BenefitsPage({ onCardClick, onNavigate }: Props) {
       {/* Nav — instant */}
       <header className="border-b border-[#eaeaeb] flex h-[60px] items-center justify-between px-8 w-full shrink-0">
         <div className="flex items-center gap-2">
-          <img src="/src/assets/logo.svg" alt="Payflip" className="h-7" />
+          <img src={logoSrc} alt="Payflip" className="h-7" />
         </div>
         <nav className="absolute left-1/2 -translate-x-1/2 flex gap-6 h-[60px] items-center">
           {NAV_LINKS.map((link) => (

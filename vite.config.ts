@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/design-lab/',
+  base: '/payflip-employee-app-desktop/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
