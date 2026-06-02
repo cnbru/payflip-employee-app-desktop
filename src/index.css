@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Ultralight.otf'); font-weight: 200; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-UltralightItalic.otf'); font-weight: 200; font-style: italic; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Light.otf'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-LightItalic.otf'); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Book.otf'); font-weight: 350; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-BookItalic.otf'); font-weight: 350; font-style: italic; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Regular.otf'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-RegularItalic.otf'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Medium.otf'); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-MediumItalic.otf'); font-weight: 500; font-style: italic; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Semibold.otf'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-SemiboldItalic.otf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-Bold.otf'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Studio Feixen Sans'; src: url('./assets/fonts/StudioFeixenSans-BoldItalic.otf'); font-weight: 700; font-style: italic; }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Studio Feixen Sans', system-ui, sans-serif;
+  background: white;
+  color: #0f0d28;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fade-up 380ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
